@@ -15,6 +15,7 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 
 </head>
 
@@ -39,6 +40,77 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="menu-open-btn js-open-menu">
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mob-menu js-menu-container">
+            <div class="mob-container">
+                <div>
+                    <button type="button" class="menu-close-btn js-close-menu">
+                        <svg class="mob-close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-item"><a class="mob-menu-link link current-mob"
+                                href="./index.html">Studio</a>
+                        </li>
+                        <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mob-menu-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <address class="mob-menu-address">
+                        <ul class="mob-menu-address-list list">
+                            <li>
+                                <a class="mob-menu-address-link link tel-marker" href="tel:+110001111111">+11 (000)
+                                    111-11-11</a>
+                            </li>
+                            <li>
+                                <a class="mob-menu-address-link link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="mob-soc">
+                        <ul class="mob-soc-list list">
+                            <li class="mob-soc-item">
+                                <a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                                    <svg class="mob-soc-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-soc-item">
+                                <a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                                    <svg class="mob-soc-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-soc-item">
+                                <a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                                    <svg class="mob-soc-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-soc-item">
+                                <a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                                    <svg class="mob-soc-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -58,7 +130,7 @@
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits-title top-title">Strategy</h3>
+                        <h3 class="benefits-title">Strategy</h3>
                         <p class="benefits-text top-text">
                             Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.
@@ -70,7 +142,7 @@
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits-title top-title">Punctuality</h3>
+                        <h3 class="benefits-title">Punctuality</h3>
                         <p class="benefits-text top-text">
                             Bring the key message to the brand's audience for the best price within the shortest
                             possible
@@ -83,7 +155,7 @@
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits-title top-title">Diligence</h3>
+                        <h3 class="benefits-title">Diligence</h3>
                         <p class="benefits-text top-text">
                             Research and confirm brands that present the strongest digital growth opportunities and
                             minimize
@@ -96,7 +168,7 @@
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits-title top-title">Technologies</h3>
+                        <h3 class="benefits-title">Technologies</h3>
                         <p class="benefits-text top-text">
                             Design practice focused on digital experiences. We bring forth a deep passion for
                             problem-solving.
@@ -110,15 +182,16 @@
                 <h2 class="services-primary-title section-title">What are we doing</h2>
                 <ul class="services-list list">
                     <li class="services-items">
-                        <img class="services-pic" src="./images/service1.jpg" alt="website page on monitor" width="360">
+                        <img class="services-pic" srcset="./images/service1.jpg 1x, ./images/service1@2.jpg 2x"
+                            src="./images/service1.jpg" alt="website page on monitor" width="360">
                     </li>
                     <li class="services-items">
-                        <img class="services-pic" src="./images/service2.jpg" alt="multiple smartphone screens"
-                            width="360">
+                        <img class="services-pic" srcset="./images/service2.jpg 1x, ./images/service2@2.jpg 2x"
+                            src="./images/service2.jpg" alt="multiple smartphone screens" width="360">
                     </li>
                     <li class="services-items">
-                        <img class="services-pic" src="./images/service3.jpg" alt="smartphone in hand and laptop"
-                            width="360">
+                        <img class="services-pic" srcset="./images/service3.jpg 1x, ./images/service3@2.jpg 2x"
+                            src="./images/service3.jpg" alt="smartphone in hand and laptop" width="360">
                     </li>
                 </ul>
             </div>
@@ -128,7 +201,8 @@
                 <h2 class="team-primary-title section-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img class="team-pic" src="./images/photo-pd.jpg" alt="photo product designer" width="264">
+                        <img class="team-pic" srcset="./images/photo-pd.jpg 1x, ./images/photo-pd@2.jpg 2x"
+                            src="./images/photo-pd.jpg" alt="photo product designer" width="264">
                         <div class="team-item-border">
                             <h3 class="team-title top-title">Mark Guerrero</h3>
                             <p class="team-text top-text">Product Designer</p>
@@ -165,7 +239,8 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-pic" src="./images/photo-fd.jpg" alt="photo frontend developer" width="264">
+                        <img class="team-pic" srcset="./images/photo-fd.jpg 1x, ./images/photo-fd@2.jpg 2x"
+                            src="./images/photo-fd.jpg" alt="photo frontend developer" width="264">
                         <div class="team-item-border">
                             <h3 class="team-title top-title">Tom Ford</h3>
                             <p class="team-text top-text">Frontend Developer</p>
@@ -202,7 +277,8 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-pic" src="./images/photo-m.jpg" alt="photo marketing" width="264">
+                        <img class="team-pic" srcset="./images/photo-m.jpg 1x, ./images/photo-m@2.jpg 2x"
+                            src="./images/photo-m.jpg" alt="photo marketing" width="264">
                         <div class="team-item-border">
                             <h3 class="team-title top-title">Camila Garcia</h3>
                             <p class="team-text top-text">Marketing</p>
@@ -239,7 +315,8 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-pic" src="./images/photo-uid.jpg" alt="photo ui designer" width="264">
+                        <img class="team-pic" srcset="./images/photo-uid.jpg 1x, ./images/photo-uid@2.jpg 2x"
+                            src="./images/photo-uid.jpg" alt="photo ui designer" width="264">
                         <div class="team-item-border">
                             <h3 class="team-title top-title">Daniel Wilson</h3>
                             <p class="team-text top-text">UI Designer</p>
@@ -446,6 +523,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

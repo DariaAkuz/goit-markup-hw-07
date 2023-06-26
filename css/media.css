@@ -1,0 +1,398 @@
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 426px;
+    }
+
+    /* стилі mob-menu-header */
+    .mob-menu-address-link.tel-marker {
+        font-size: 36px;
+
+    }
+
+    .mob-container {
+        max-width: 428px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mob-soc-list {
+        gap: 56px;
+        justify-content: center;
+
+    }
+
+    /* стилі секції hero */
+    @media screen and (min-width: 429px) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab@2.jpg);
+            }
+        }
+    }
+
+    /* стилі footer */
+    .form-input-footer {
+        max-width: 398px;
+    }
+
+    /* стилі modal */
+    .modal {
+        width: 392px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 766px;
+    }
+
+    /* стилі header */
+
+    .header-logo {
+        margin-right: 120px;
+    }
+
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+    }
+
+
+    .header-link {
+        display: block;
+        padding: 24px 0;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--second-text-color);
+
+        position: relative;
+        transition: color var(--tra);
+    }
+
+    .header-link:hover,
+    .header-link:focus {
+        color: var(--hover-bg-color);
+    }
+
+    .header-link.current {
+        color: var(--hover-text-color);
+    }
+
+    .header-link.current::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+
+        width: 100%;
+        height: 4px;
+        background-color: var(--hover-bg-color);
+        border-radius: 2px;
+    }
+
+    .header-address {
+        margin-left: 122px;
+        font-style: normal;
+    }
+
+    .header-address-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 16px 0;
+    }
+
+    .header-address-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--top-text-color);
+
+        transition: color var(--tra);
+    }
+
+    .header-address-link:hover,
+    .header-address-link:focus {
+        color: var(--hover-text-color);
+    }
+
+    .menu-open-btn {
+        display: none;
+    }
+
+    /* стилі секції hero */
+    .hero-title {
+        max-width: 496px;
+        margin: 0 auto 36px;
+
+        font-size: 56px;
+        line-height: 1.07;
+
+    }
+
+    @media screen and (min-width: 769px) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg@2.jpg);
+            }
+        }
+    }
+
+
+    /* стилі секції benefits */
+    .benefits-list {
+        gap: 72px 24px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .benefits-title {
+        text-align: left;
+    }
+
+    /* стилі секції team */
+    .team>.container {
+        max-width: 582px;
+    }
+
+    .team-list {
+        gap: 64px 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* стилі секції customers */
+    .customers>.container {
+        max-width: 582px;
+    }
+
+    .customers-list {
+        gap: 72px 24px;
+    }
+
+    .customers-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    /* стилі footer */
+    .footer>.container {
+        max-width: 582px;
+    }
+
+    .footer-container {
+
+        justify-content: left;
+        align-items: baseline;
+
+    }
+
+    .footer-primary {
+        display: block;
+        margin: 0 24px 72px 0;
+    }
+
+    .footer-soc {
+        display: block;
+    }
+
+    .footer-text.top-text {
+        width: 264px;
+    }
+
+    .footer-subscription {
+        display: block;
+        margin: 0;
+    }
+
+    .footer-form {
+        flex-wrap: nowrap;
+        max-width: 453px;
+        gap: 24px;
+    }
+
+    .form-input-footer {
+        width: 264px;
+    }
+
+    /* стилі modal */
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* стилі header */
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .header-link.current::after {
+        bottom: -1px;
+    }
+
+    .header-address {
+        margin-left: auto;
+    }
+
+    .header-address-list {
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .header-address-link {
+        display: block;
+        padding: 24px 0;
+
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    /* стилі секції hero */
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+    }
+
+    .hero-title {
+        margin: 0 auto 48px;
+    }
+
+    /* стилі секції benefits */
+    .benefits-list {
+        gap: 24px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .benefits-icon-box {
+        display: flex;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--second-bg-color);
+    }
+
+    .benefits-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .benefits-text {
+        font-weight: 400;
+    }
+
+    /* стилі секції services */
+    .services {
+        display: block;
+        padding-top: 0;
+    }
+
+    .services-primary-title {
+        margin-bottom: 72px;
+
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .services-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .services-items {
+        width: calc((100% - 48px) / 3);
+    }
+
+    /* стилі секції team */
+    .team>.container {
+        max-width: 1158px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    /* стилі секції customers */
+    .customers>.container {
+        max-width: 1158px;
+    }
+
+    .customers-list {
+        gap: 24px;
+    }
+
+    .customers-item {
+        width: calc((100% - 120px) / 6);
+    }
+
+    /* стилі footer */
+    .footer>.container {
+        max-width: 1158px;
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+
+    }
+
+    .footer-primary {
+        margin: 0 120px 0 0;
+    }
+
+    .footer-soc {
+        margin: 0 80px 0 0;
+    }
+
+}
